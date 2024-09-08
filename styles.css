@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #160431, #2b0347); /* gradiente roxo escuro */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Alinha o conteúdo ao centro horizontalmente */
+    justify-content: center; /* Alinha o conteúdo ao centro verticalmente */
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px; /* Limita a largura da barra de pesquisa */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #3e1f5c; /* roxo */
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    padding: 15px 30px; /* Aumenta o padding */
+    border-radius: 10px; /* Ajusta o arredondamento dos cantos */
+    border: none;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px;
+}
+
+.button-random {
+    background: linear-gradient(45deg, #176f17, #064806); /* gradiente verde */
+}
+
+.button-popular {
+    background: linear-gradient(45deg, #7e0000, #00007c); /* gradiente vermelho e azul */
+}
+
+.categories-container {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px; /* Limita a largura das categorias */
+    padding: 15px;
+    border-radius: 10px;
+    background: #3e1f5c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.category {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    width: 100px; /* Ajusta a largura da caixa de categoria */
+}
+
+.category-img {
+    width: 100px; /* Ajusta a largura da imagem da categoria */
+    height: 70px;
+    border-radius: 10px;
+}
+
+.music-box {
+    display: none; /* Inicialmente oculta todas as músicas */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px; /* Limita a largura da caixa de música */
+    padding: 15px;
+    border-radius: 10px;
+    background: #3e1f5c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre a imagem do álbum e o título */
+    box-sizing: border-box; /* Garante que o padding não altere a largura */
+    height: 100px; /* Define uma altura fixa para todas as caixas de música */
+    overflow: hidden; /* Oculta o conteúdo que excede o tamanho da caixa */
+}
+
+.music-box .album-cover {
+    width: 50px; /* Ajusta a largura da imagem do álbum */
+    height: 50px;
+    border-radius: 5px;
+}
+
+.music-box .title {
+    display: block;
+    margin: 0 10px; /* Espaçamento entre o título e os botões */
+    flex-grow: 1; /* Faz com que o título use o espaço restante */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    overflow: hidden; /* Oculta o texto que excede o tamanho da caixa */
+}
+
+.music-box .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os ícones dos botões */
+    margin-top: 10px; /* Espaçamento entre o título e os controles */
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: invert(1) brightness(0) contrast(100%) sepia(0);
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background: #3e1f5c;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do rodapé */
+}
+
+.footer-icon {
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-icon img {
+    width: 30px; /* Ajusta a largura do ícone */
+    height: 30px; /* Ajusta a altura do ícone */
+}

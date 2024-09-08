@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmetystaApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <input type="text" class="search-bar" placeholder="Pesquisar músicas..." oninput="searchMusic()">
+    </header>
+
+    <main>
+        <button class="button button-random">Aleatório</button>
+        <button class="button button-popular">Popular</button>
+
+        <div class="categories-container">
+            <a href="#" class="category" onclick="toggleMusicBox('rock')">
+                <img src="hymnosimg.png" alt="Rock" class="category-img">
+                <p>Hymnos</p>
+            </a>
+            <a href="#" class="category" onclick="toggleMusicBox('pop')">
+                <img src="fadoimg.png" alt="Pop" class="category-img">
+                <p>Fado</p>
+            </a>
+            <a href="#" class="category" onclick="toggleMusicBox('jazz')">
+                <img src="jazzimg.png" alt="Jazz" class="category-img">
+                <p>Jazz</p>
+            </a>
+        </div>
+
+        <div class="music-box rock">
+            <img src="lofiimg.jpg" alt="Album 1" class="album-cover">
+            <span class="title">Sancta Maria Strela do Dia</span>
+            <div class="controls">
+                <img src="play-button.png" alt="Play" class="icon" onclick="playMusic('rock', 'rockSong1.mp3')">
+                <img src="pause.png" alt="Stop" class="icon" onclick="stopMusic()">
+                <img src="rewind-button.png" alt="Restart" class="icon" onclick="restartMusic()">
+            </div>
+        </div>
+
+        <div class="music-box rock">
+            <img src="lofiimg.jpg" alt="Album 2" class="album-cover">
+            <span class="title">Strela do Dia</span>
+            <div class="controls">
+                <img src="play-button.png" alt="Play" class="icon" onclick="playMusic('rock', 'rockSong2.mp3')">
+                <img src="pause.png" alt="Stop" class="icon" onclick="stopMusic()">
+                <img src="rewind-button.png" alt="Restart" class="icon" onclick="restartMusic()">
+            </div>
+        </div>
+
+        <div class="music-box pop">
+            <img src="guitarimg.jpg" alt="Album 3" class="album-cover">
+            <span class="title">Fado</span>
+            <div class="controls">
+                <img src="play-button.png" alt="Play" class="icon" onclick="playMusic('pop', 'popSong1.mp3')">
+                <img src="pause.png" alt="Stop" class="icon" onclick="stopMusic()">
+                <img src="rewind-button.png" alt="Restart" class="icon" onclick="restartMusic()">
+            </div>
+        </div>
+
+        <div class="music-box pop">
+            <img src="guitarimg.jpg" alt="Album 4" class="album-cover">
+            <span class="title">Fado</span>
+            <div class="controls">
+                <img src="play-button.png" alt="Play" class="icon" onclick="playMusic('pop', 'popSong2.mp3')">
+                <img src="pause.png" alt="Stop" class="icon" onclick="stopMusic()">
+                <img src="rewind-button.png" alt="Restart" class="icon" onclick="restartMusic()">
+            </div>
+        </div>
+
+        <div class="music-box jazz">
+            <img src="saximg.jpg" alt="Album 5" class="album-cover">
+            <span class="title">Jazz</span>
+            <div class="controls">
+                <img src="play-button.png" alt="Play" class="icon" onclick="playMusic('jazz', 'jazzSong1.mp3')">
+                <img src="pause.png" alt="Stop" class="icon" onclick="stopMusic()">
+                <img src="rewind-button.png" alt="Restart" class="icon" onclick="restartMusic()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-icon">
+            <img src="musicimg.png" alt="Músicas">
+            <p>Musicas</p>
+        </div>
+        <div class="footer-icon">
+            <img src="prayerimg.png" alt="Orações">
+            <p>Orações</p>
+        </div>
+        <div class="footer-icon">
+            <img src="Ametysta_logo_simple.png" alt="Downloads">
+            <p>IA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
