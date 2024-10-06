@@ -35,15 +35,18 @@ body {
     height: auto;
 }
 
-.sidebar nav ul, .playlists ul {
+.sidebar nav ul,
+.playlists ul {
     list-style: none;
 }
 
-.sidebar nav ul li, .playlists ul li {
+.sidebar nav ul li,
+.playlists ul li {
     margin-bottom: 16px;
 }
 
-.sidebar nav ul li a, .playlists ul li a {
+.sidebar nav ul li a,
+.playlists ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-size: 14px;
@@ -52,11 +55,13 @@ body {
     align-items: center;
 }
 
-.sidebar nav ul li a:hover, .playlists ul li a:hover {
+.sidebar nav ul li a:hover,
+.playlists ul li a:hover {
     color: #FFFFFF;
 }
 
-.sidebar nav ul li a i, .playlists ul li a i {
+.sidebar nav ul li a i,
+.playlists ul li a i {
     margin-right: 16px;
     font-size: 24px;
 }
@@ -183,11 +188,13 @@ header {
     margin-right: 8px;
 }
 
-.featured, .recently-played {
+.featured,
+.recently-played {
     margin-bottom: 48px;
 }
 
-.featured h2, .recently-played h2 {
+.featured h2,
+.recently-played h2 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 16px;
@@ -239,7 +246,8 @@ header {
     align-items: center;
 }
 
-.player-left, .player-right {
+.player-left,
+.player-right {
     display: flex;
     align-items: center;
     width: 30%;
@@ -311,7 +319,8 @@ header {
     width: 30%;
 }
 
-.current-time, .total-time {
+.current-time,
+.total-time {
     font-size: 12px;
     color: #b3b3b3;
 }
@@ -341,7 +350,7 @@ header {
 /* Media query para dispositivos móveis */
 @media screen and (max-width: 768px) {
     body {
-        padding-bottom: 120px; /* Espaço para o player e a navegação inferior */
+        padding-bottom: 120px;
     }
 
     .container {
@@ -349,7 +358,7 @@ header {
     }
 
     .sidebar {
-        display: none; /* Oculta a barra lateral em dispositivos móveis */
+        display: none;
     }
 
     .content {
@@ -369,7 +378,8 @@ header {
         margin-bottom: 24px;
     }
 
-    .featured, .recently-played {
+    .featured,
+    .recently-played {
         margin-bottom: 32px;
     }
 
@@ -395,7 +405,8 @@ header {
         width: auto;
     }
 
-    .player-center, .player-right {
+    .player-center,
+    .player-right {
         display: none;
     }
 
