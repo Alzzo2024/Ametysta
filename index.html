@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ametysta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <div id="status-bar"></div>
+        <header>
+            <img src="AWlogo.png" alt="AW Logo" id="app-logo">
+        </header>
+        <div id="content">
+            <!-- Conteúdo das abas será inserido aqui -->
+        </div>
+        <nav>
+            <button onclick="showTab('musicas')"><i class="fas fa-music"></i></button>
+            <button onclick="showTab('oracoes')"><i class="fas fa-pray"></i></button>
+            <button onclick="showTab('player')"><i class="fas fa-play-circle"></i></button>
+        </nav>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
