@@ -1,8 +1,8 @@
 const musicList = [
-    { title: "Shape of You", artist: "Ed Sheeran", cover: "https://example.com/shape-of-you.jpg", file: "https://example.com/shape-of-you.mp3" },
-    { title: "Blinding Lights", artist: "The Weeknd", cover: "https://example.com/blinding-lights.jpg", file: "https://example.com/blinding-lights.mp3" },
-    { title: "Dance Monkey", artist: "Tones and I", cover: "https://example.com/dance-monkey.jpg", file: "https://example.com/dance-monkey.mp3" },
-    { title: "Someone You Loved", artist: "Lewis Capaldi", cover: "https://example.com/someone-you-loved.jpg", file: "https://example.com/someone-you-loved.mp3" },
+    { title: "Musica1Template", artist: "...", cover: "https://example.com/shape-of-you.jpg", file: "https://example.com/shape-of-you.mp3" },
+    { title: "Musica1Template", artist: "...", cover: "https://example.com/blinding-lights.jpg", file: "https://example.com/blinding-lights.mp3" },
+    { title: "Musica1Template", artist: "...", cover: "https://example.com/dance-monkey.jpg", file: "https://example.com/dance-monkey.mp3" },
+    { title: "Musica1Template", artist: "...", cover: "https://example.com/someone-you-loved.jpg", file: "https://example.com/someone-you-loved.mp3" },
 ];
 
 const prayerList = [
