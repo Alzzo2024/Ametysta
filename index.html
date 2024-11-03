@@ -11,15 +11,44 @@
     <div id="app">
         <div id="status-bar"></div>
         <header>
-            <img src="AWlogo.png" alt="AW Logo" id="app-logo">
+            <img src="Alogo.png" alt="ALogo" id="app-logo">
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar músicas ou orações...">
+                    <i class="fas fa-times clear-search" id="clearSearch"></i>
+                </div>
+            </div>
         </header>
-        <div id="content">
-            <!-- Conteúdo das abas será inserido aqui -->
+
+        <div class="tags-container">
+            <div class="tags-scroll">
+                <button class="tag-btn active" data-tag="todas">Todas</button>
+                <button class="tag-btn" data-tag="populares">Populares</button>
+                <button class="tag-btn" data-tag="novenas">Novenas</button>
+                <button class="tag-btn" data-tag="tercos">Terços</button>
+            </div>
         </div>
+
+        <div id="content"></div>
+
         <nav>
-            <button onclick="showTab('musicas')"><i class="fas fa-music"></i></button>
-            <button onclick="showTab('oracoes')"><i class="fas fa-pray"></i></button>
-            <button onclick="showTab('player')"><i class="fas fa-play-circle"></i></button>
+            <button onclick="showTab('musicas')" class="active">
+                <i class="fas fa-compass"></i>
+                <span>Explorar</span>
+            </button>
+            <button onclick="showTab('oracoes')">
+                <i class="fas fa-pray"></i>
+                <span>Orações</span>
+            </button>
+            <button onclick="showTab('player')">
+                <i class="fas fa-play-circle"></i>
+                <span>Player</span>
+            </button>
+            <button onclick="showTab('downloads')">
+                <i class="fas fa-download"></i>
+                <span>Downloads</span>
+            </button>
         </nav>
     </div>
     <script src="app.js"></script>
